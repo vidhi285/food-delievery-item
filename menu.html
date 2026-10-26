@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Food Menu</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 32px 16px;
+      background: #fffaf4;
+      color: #29251f;
+      font-family: Arial, sans-serif;
+    }
+    main { max-width: 900px; margin: auto; }
+    h1 { text-align: center; }
+    .menu {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 18px;
+    }
+    .item {
+      overflow: hidden;
+      border-radius: 12px;
+      background: white;
+      box-shadow: 0 3px 12px #2d211015;
+    }
+    .item img { width: 100%; height: 160px; object-fit: cover; }
+    .details { padding: 14px; }
+    .details h2 { margin: 0 0 8px; font-size: 20px; }
+    .details p { color: #706a62; }
+    .price { color: #d9572b; font-weight: bold; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Our Menu</h1>
+    <section class="menu" aria-label="Food items">
+      <article class="item">
+        <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&amp;fit=crop&amp;w=700&amp;q=80" alt="Cheeseburger">
+        <div class="details">
+          <h2>Classic Burger</h2>
+          <p>Juicy beef, cheddar, lettuce and tomato.</p>
+          <span class="price">$9.50</span>
+        </div>
+      </article>
+      <article class="item">
+        <img src="https://images.unsplash.com/photo-1579751626657-72bc17010498?auto=format&amp;fit=crop&amp;w=700&amp;q=80" alt="Margherita pizza">
+        <div class="details">
+          <h2>Margherita Pizza</h2>
+          <p>Tomato, mozzarella and fresh basil.</p>
+          <span class="price">$12.00</span>
+        </div>
+      </article>
+      <article class="item">
+        <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&amp;fit=crop&amp;w=700&amp;q=80" alt="Fresh salad bowl">
+        <div class="details">
+          <h2>Garden Salad</h2>
+          <p>Fresh greens, vegetables and house dressing.</p>
+          <span class="price">$8.00</span>
+        </div>
+      </article>
+      <article class="item">
+        <img src="https://images.unsplash.com/photo-1573080496219-bb080dd4f877?auto=format&amp;fit=crop&amp;w=700&amp;q=80" alt="Crispy golden fries">
+        <div class="details">
+          <h2>Golden Fries</h2>
+          <p>Crispy fries with a pinch of sea salt.</p>
+          <span class="price">$4.50</span>
+        </div>
+      </article>
+    </section>
+  </main>
+</body>
+</html>
